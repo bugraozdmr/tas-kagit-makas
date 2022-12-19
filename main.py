@@ -39,13 +39,13 @@ while True:
         print(sevinc[o])
     elif n == "kağıt" and deger == "taş":
         print(uzuntu[o])
-    elif n != "taş" or n != "kağıt" or n != "makas":
+    elif n == deger:
+        print("berabere")
+    else:
         print("düzgün değer girmedin üzme beni bro :( \nbiraz kendimi toplamam lazım bi 5 sn kadar bekle")
         time.sleep(5)
         print("geldim devamke ...")
         continue
-    else:
-        print("berabere")
     #bir oyun daha
     x = input("bir oyun daha ??? :(e/h):").lower()
     if x == "e":
